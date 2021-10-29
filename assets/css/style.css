@@ -212,7 +212,7 @@ header{
     margin: auto;
 }
 
-.button{
+.section-about-us--left .button{
     background-color: #b28756;
     color: #fff;
     text-decoration: none;
@@ -255,4 +255,89 @@ CSS DE ÁREAS ESPECÍFICAS
 .section-about-us--right img{
     width: 480px;
     box-shadow: 0px 5px 10px #333 ;
+}
+
+
+.section-services{
+    display: flex;
+}
+
+.section-service{
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #333;
+    padding: 15px;
+}
+
+.section-service:first-child{
+    border-left: 1px solid #333;
+}
+
+.section-service .img-area{
+    height:68px;
+}
+
+.section-service h4{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.section-service p{
+    margin-top: 10px;
+    font-size: 13px;
+    color: #999;
+}
+
+.section-our-projects{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-menu-area nav{
+    border-radius: 20px; 
+    background-color: #ddd;
+}
+
+.projects-menu-area nav ul{
+    display: flex;
+    list-style: none;   
+}
+
+.projects-menu-area nav ul li{
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+}
+
+.projects-menu-area nav ul li:hover,
+.projects-menu-area nav ul .active{
+    border-bottom: 5px solid #b28756;
+    background-color: #e6e6e6;
+}
+
+.projects-menu-area nav ul li:last-child{
+    border-right: none;
+}
+
+.projects-menu-area nav ul li a{
+    text-decoration: none;
+    color: #000;
+    width: inherit;
+    height: inherit;
+    padding: 10px;
+}
+
+
+.projects-photo-area{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    max-width: 1140px;
+    margin: 20px;
+    flex-wrap: wrap;
 }
