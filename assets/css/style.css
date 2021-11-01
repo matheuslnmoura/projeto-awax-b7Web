@@ -333,11 +333,66 @@ CSS DE ÁREAS ESPECÍFICAS
 }
 
 
-.projects-photo-area{
-    display: flex;
-    justify-content: space-between;
+.section-project-photos{
     width: 100vw;
     max-width: 1140px;
-    margin: 20px;
+    margin-top: 20px;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects--photos{
+    width: 280px;
+    
+}
+
+.photo-area{
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+
+.photo-info{
+    position: absolute;
+    background-color: rgba(0,0, 0, 0.5);
+    width: inherit;
+    height: inherit;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.photo-area:hover .photo-info{
+    display: flex;
+
+}
+
+.photo-info h5{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.photo-area img{
+    width: inherit;
+    height: inherit;
+}
+
+.section-our-projects a{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.section-our-projects .button{
+    background-color: #b28756;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 20px;
 }
