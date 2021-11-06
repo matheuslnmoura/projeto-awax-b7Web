@@ -225,6 +225,13 @@ header{
     margin-top: 30px;
 }
 
+.companies{
+    max-width: 1140px;
+    margin: auto;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
 
 
 /*
@@ -587,3 +594,4 @@ CSS DE ÁREAS ESPECÍFICAS
 .sliders-pointer--happy-clients .pointer.active{
     background-color: #b28756;
 }
+
