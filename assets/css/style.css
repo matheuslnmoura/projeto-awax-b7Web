@@ -665,16 +665,17 @@ CSS DE ÁREAS ESPECÍFICAS
 
 .section-body.features{
     max-width: none;
+    display: flex;
+    flex-direction: column;
 }
 
 .section-features-slider{
     width:300vw;
-    max-width: calc(3*1140px);
+    display: flex;
 }
 
 .section-features-area{
     width: 100vw;
-    max-width: 1140px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -682,6 +683,8 @@ CSS DE ÁREAS ESPECÍFICAS
 
 .section-features{
     display: flex;
+    width: 100%;
+    max-width: 1140px;
 }
 
 .section-features--right{
@@ -710,7 +713,7 @@ CSS DE ÁREAS ESPECÍFICAS
     flex-direction: column;
     align-items: flex-start;
     margin-left: 80px;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 }
 
 .feature-header{
@@ -758,14 +761,38 @@ CSS DE ÁREAS ESPECÍFICAS
     font-size: 18px;
 }
 
-.section-features-area .button{
+.section-body.features .sliders-pointer{
+    width: 100vw;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-body.features .pointer{
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    border: 1px solid #b28756;
+    background-color: transparent;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.section-body.features .pointer.active{
+    background-color: #b28756;
+}
+
+.section-body.features .button{
     background-color: #b28756;
     padding: 10px 30px;
-    margin-top: 40px;
+    margin-top: 20px;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 12px;
     border-radius: 20px;
     text-decoration: none;
     color: #FFF;
+    align-self: center;
 }
+
