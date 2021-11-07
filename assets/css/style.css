@@ -243,6 +243,16 @@ header{
     background-color: #ddd
 }
 
+.social-media-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 60px;
+}
+
+
+
 
 /*
 CSS DE ÁREAS ESPECÍFICAS
@@ -832,3 +842,70 @@ CSS DE ÁREAS ESPECÍFICAS
     font-size: 13px;
     color: #999;
 }
+
+.social-media-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-media-text{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.social-media-text img{
+    margin-right: 7px;
+}
+
+.social-media-text span{
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.social-media-icons{
+    margin-right: 25px;
+    text-decoration: none;
+    color: #000;
+}
+
+.social-media-icons:hover .social-media-icon div{
+    filter: opacity(0.6);
+}
+
+.social-media-icon{
+    display: flex;
+    align-items: center;
+}
+
+.social-media-icon div{
+    background-color: #1DA1F2;
+    width: 25px;
+    height: 25px;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3px;
+}
+
+.social-media-icons:nth-child(3) .social-media-icon div{
+    background-color: #0072b1;
+}
+
+.social-media-icons:nth-child(4) .social-media-icon div{
+    background-color: #4267B2;
+}
+
+.social-media-icons:nth-child(5) .social-media-icon div{
+    background-color: #db4a39;
+}
+
+.social-media-icons:nth-child(6) .social-media-icon div{
+    background-color: #E60023;
+}
+
+.social-media-icon span{
+    font-size: 10px;
+}
+
