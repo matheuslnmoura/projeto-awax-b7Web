@@ -251,7 +251,12 @@ header{
     height: 60px;
 }
 
-
+.contact-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+}
 
 
 /*
@@ -909,3 +914,90 @@ CSS DE ÁREAS ESPECÍFICAS
     font-size: 10px;
 }
 
+.contact-us-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    margin-top: 50px;
+}
+
+.contact-us-content h1{
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contact-us-content h3{
+    text-transform: uppercase;
+    color: #888;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.contact-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea{
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #888;
+    background-color: transparent;
+    padding: 15px 0px;
+    text-transform: uppercase;
+}
+
+.contact-form input::-webkit-input-placeholder,
+.contact-form textarea::-webkit-input-placeholder{
+    color: #888;
+    font-family: 'Montserrat';
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    outline: 0;
+    border-bottom: 2px solid #b28756;
+    transform:scale(1.05)
+}
+
+.form-first-line{
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-first-line input{
+    flex: 1;
+
+}
+
+.form-first-line input[type=text]{
+    margin-right: 20px;
+}
+
+.contact-form input[name="subject"],
+.contact-form textarea{
+    width: 100%;
+}
+
+.contact-form a{
+    align-self: center;
+    text-decoration: none;
+
+}
+
+.contact-form a button{
+    background-color: #b28756;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 20px;
+    color: #fff;
+    border: none;
+    margin: 40px 0px;
+}
