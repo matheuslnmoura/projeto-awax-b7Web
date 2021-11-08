@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="header-container">
             <div class="logo-area">
                 <div class="logo-img">
@@ -22,14 +22,14 @@
                 <nav>
                     <ul>
                         <li class="active"><a href="">HOME</a></li>
-                        <li><a href="">ABOUT US</a></li>
-                        <li><a href="">SERVICES</a></li>
-                        <li><a href="">OUR PROJECTS</a></li>
-                        <li><a href="">OUR TEAM</a></li>
-                        <li><a href="">HAPPY CLIENTS</a></li>
-                        <li><a href="">PRICE</a></li>
-                        <li><a href="">SOME FACTS</a></li>
-                        <li><a href="">CONTACT US</a></li>
+                        <li><a href="#about-us">ABOUT US</a></li>
+                        <li><a href="#services">SERVICES</a></li>
+                        <li><a href="#projects">OUR PROJECTS</a></li>
+                        <li><a href="#our-team">OUR TEAM</a></li>
+                        <li><a href="#happy-clients">HAPPY CLIENTS</a></li>
+                        <li><a href="#price">PRICE</a></li>
+                        <li><a href="#some-facs">SOME FACTS</a></li>
+                        <li><a href="#contact-us">CONTACT US</a></li>
                     </ul>
                 </nav>
             </div>
@@ -60,7 +60,7 @@
             </div>
         </section>
 
-        <section class="default light">
+        <section class="default light" id="about-us">
             <div class="section-title">About Us</div>
             <div class="section-desc">Who we are?</div>
             <div class="section-body">
@@ -76,7 +76,7 @@
             </div>
         </section>
 
-        <section class="default dark">
+        <section class="default dark" id="services">
             <div class="section-title">Services</div>
             <div class="section-desc">services that we provide</div>
             <div class="section-body">
@@ -106,7 +106,7 @@
             </div>
         </section>
 
-        <section class="default light">
+        <section class="default light" id="projects">
             <div class="section-title">our projects</div>
             <div class="section-desc">what we create</div>
             <div class="section-body">
@@ -253,7 +253,7 @@
             </div>
         </section>
 
-        <section class="default dark bg-team">
+        <section class="default dark bg-team" id="our-team">
             <div class="section-team-area">
                 <div class="section-title">our team</div>
                 <div class="section-desc">our co-workers</div>
@@ -331,7 +331,7 @@
             </div>
         </section>
 
-        <section class="default light">
+        <section class="default light" id="happy-clients">
             <div class="section-title">happy clients</div>
             <div class="section-desc">clients reviews</div>
             <div class="section-body--happy-clients">
@@ -454,7 +454,7 @@
             </div>
         </section>
 
-        <section class="default light">
+        <section class="default light" id="price">
             <div class="section-title">price</div>
             <div class="section-desc">pricing table</div>
             <div class="section-body--price">
@@ -478,7 +478,7 @@
                 </div>
 
                 <div class="price-options-area">
-                    <h2>standart</h2>
+                    <h2>standard</h2>
                     <h1>$ 14.99</h1>
                     <h5>/month</h5>
                     <p>Tracking Issues</p>
@@ -704,7 +704,7 @@
 
         </section>
 
-        <section class="default dark">
+        <section class="default dark" id="some-facs">
             <div class="section-title">some facts</div>
             <div class="section-desc">about our work</div>
             <div class="section-body">
@@ -742,7 +742,7 @@
             </div>
         </section>
 
-        <section class="social-media-area">
+        <section class="social-media-section">
             <div class="social-media-container">
                 <div class="social-media-text">
                     <img src="assets/images/share.png">
@@ -787,7 +787,7 @@
             </div>
         </section>
 
-        <section class="contact-us">
+        <section class="contact-us" id="contact-us">
             <div class="contact-us-content">
                 <h1>contact us</h1>
                 <h3>our agency is located in melbourne, australia</h3>
@@ -882,13 +882,43 @@
         <footer>
             <div class="footer-container">
 
-                <a href="" class="go-to-top">
+                <a href="#header" class="go-to-top">
                     <div class="arrow-up"></div>
                 </a>
 
 
                 <div class="footer-content">
+                    <div class="footer-social-media">
+                        <div class="social-media-icons">
+                            <a href=""><img src="assets/images/twitter.png"></a>
+                            <a href=""><img src="assets/images/facebook.png"></a>
+                            <a href=""><img src="assets/images/googleplus.png"></a>
+                            <a href=""><img src="assets/images/linkedin.png"></a>
+                            <a href=""><img src="assets/images/pinterest.png"></a>
+                        </div>
 
+                    </div>
+
+                    <div class="text-area">
+                        <p>Morbi semper, leo vitae elementum efficitur, leo dolor rutrum lorem, ut suscipit odio ex vitae eros. Donec accumsan pellentesque pharetra. Duis sit amet fringilla magna. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    </div>
+
+                    <div class="subscribe-area">
+                        <form method="post">
+                            <input type="email" name="email" placeholder="email to subscribe">
+
+                            <a href="" class="button">subscribe</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="developed-by-area">
+                    <span>Developed as practice by Matheus Moura:</span>
+                    <div class="developer-links">
+                        <a href="https://github.com/matheuslnmoura" target="blank"><img src="assets/images/github.png"></a>
+
+                        <a href="https://www.linkedin.com/in/matheus-moura-a26060166/" target="blank"><img src="assets/images/linkedin.png"></a>
+
+                    </div>
                 </div>
 
                 
