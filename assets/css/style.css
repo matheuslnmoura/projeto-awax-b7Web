@@ -208,8 +208,13 @@ header{
 }
 
 .default .section-body{
+    width: 90vw;
     max-width: 1140px;
     margin: auto;
+}
+
+.default:nth-child(9) .section-body{
+    width: 100vw;
 }
 
 .section-about-us--left .button{
@@ -259,9 +264,107 @@ header{
 }
 
 
+.address-section{
+    background-image: url('../../media/mapa.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.content-total-area{
+    width: 100vw;
+    max-width: 1140px;
+    height: inherit;
+}
+
+.content-area{
+    width: 50%;
+    margin: 25px 0px;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contact-info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.contact-info:nth-child(1){
+    margin-top: 30px;
+}
+
+.contact-info:nth-last-child(1){
+    margin-bottom: 30px;
+}
+
+.info-icon-area{
+    width: 35px;
+    height: 35px;
+    background-color: #aaa;
+    border-radius: 18px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    width: 100vw;
+    background-color: #000;
+}
+
+.footer-container{
+    max-width: 1140px;
+    margin: auto;
+}
+
+
+
+.go-to-top{
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #b28756;
+    position: relative;
+    top: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.go-to-top .arrow-up{
+    width: 18px;
+    height: 18px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform: rotate(45deg);
+    position: relative;
+    top:4px;
+}
+
+.footer-content{
+    width: 100vw;
+    max-width: 1140px;
+    height: 100px;
+    margin: auto;
+    background-color: #fff;
+}
+
+
 /*
 CSS DE ÁREAS ESPECÍFICAS
 */
+
+
+
+
 
 .section-about-us{
     display: flex;
@@ -622,7 +725,10 @@ CSS DE ÁREAS ESPECÍFICAS
 
 .section-body--price{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 100vw;
+    max-width: 1140px;
+    margin: auto;
 }
 
 .price-options-area{
@@ -706,6 +812,7 @@ CSS DE ÁREAS ESPECÍFICAS
     flex: 1;
     display: flex;
     flex-direction: column;
+    margin-right: 10px;
 
 }
 
@@ -715,12 +822,12 @@ CSS DE ÁREAS ESPECÍFICAS
 }
 
 .section-features--left{
-    width: 520px;
+    flex: 1;
     text-align: center;
 }
 
 .section-features--left img{
-    width: 480px;
+    width: 100%;
 }
 
 .feature-area{
