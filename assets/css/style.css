@@ -49,6 +49,10 @@ header{
     align-items: center;
 }
 
+.mobile-menu-icon{
+    display: none;
+}
+
 .menu-area nav{
     height:100%;
 }
@@ -1240,4 +1244,113 @@ CSS DE ÁREAS ESPECÍFICAS
     border-radius: 20px;
     color: #fff;
     border: none;
+}
+
+
+
+
+@media (min-width: 450px) and (max-width: 800px){
+    
+    .logo-area{
+        margin-left: 40px;
+    }
+    
+    .mobile-menu-icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 40px;
+    }
+
+    .mobile-menu-icon div{
+        width: 45px;
+        height:10px;
+        background-color: #b28756;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .menu-area nav{
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 40vw;
+        height: auto;
+        top: 100px;
+        right: 0;
+    }
+
+    .mobile-menu-icon:hover{
+        transform: rotate(-90deg);
+        transition: 0.8s;
+    }
+
+    .menu-area nav ul{ 
+        flex-direction: column;
+    }
+
+    .menu-area li{
+        display: block;
+        width: fit-content;
+        margin-left: calc(100vw*0.4*0.1);
+    }
+
+    .menu-area a{
+        text-decoration: none;
+        color: #FFF;
+        font-weight:600;
+        height:70px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        padding: 0px 10px;
+        box-sizing: content-box;
+    }
+    
+    .menu-area a:hover,
+    .menu-area .active a{
+        color: #b28756;
+        border: none;
+    }
+
+
+    .section-about-us{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .section-about-us--left{
+        width: 90vw;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    
+    .section-about-us--right{
+        width: 90vw;
+    }
+    
+    .section-about-us--right img{
+        width: 100%;
+    }
+
+    .section-services{
+        flex-wrap: wrap;
+    }
+
+    .section-service{
+        min-width: 50%;
+        border:0;
+        margin-bottom: 30px;
+    }
+
+    .section-service:first-child {
+        border-left: none;
+    }
+
+    .section-team{
+        max-width: 580px;
+    }
+
 }
