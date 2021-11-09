@@ -793,13 +793,10 @@ CSS DE ÁREAS ESPECÍFICAS
     display: flex;
     flex-direction: column;
     margin-right: 10px;
+    font-size: 16px;
 
 }
 
-.section-features--right span{
-    font-size: 14px;
-    line-height: 25px;
-}
 
 .section-features--left{
     flex: 1;
@@ -1353,4 +1350,91 @@ CSS DE ÁREAS ESPECÍFICAS
         max-width: 580px;
     }
 
+    .projects-menu-area nav ul li{
+        font-size: 0.5rem;
+    }
+
+    .projects--photos{
+        width: 80vw;
+        margin-bottom: 20px;
+    }
+
+    .projects--photos:nth-child(7),
+    .projects--photos:nth-child(8),
+    .projects--photos:nth-child(9),
+    .projects--photos:nth-child(10),
+    .projects--photos:nth-child(11),
+    .projects--photos:nth-child(12){
+        display: none;
+    }
+    
+    .photo-area{
+        width: 80vw;
+        margin: 0;
+        height: auto;
+    }
+
+    .photo-info{
+        height: calc(80vw*0.625);
+    }
+
+    .companies-container{
+        flex-wrap: wrap;
+
+    }
+
+    .company-logo{
+        margin: 10px;
+    }
+
+    .section-body--price{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price-options-area{
+        width: 70vw;
+        margin-bottom: 15px;
+    }
+
+    .section-features{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+    }
+
+    .section-features--left{
+        width: 230px;
+        margin-bottom: 40px;
+    }
+
+    .section-features--right{
+        margin-right: 0;
+    }
+
+    .feature-area{
+        margin-left: 0;
+    }
+
+    .feature-header h1{
+        font-size: 1.6em;
+    }
+
+    .feature-content p,
+    .feature-content ul li{
+        font-size: 0.825em;
+    }
+
+    .section-some-facts{
+        flex-direction: column;
+    }
+
+    .contact-us-content h3{
+        text-align: center;
+    }
+
+    .form-first-line{
+        flex-direction: column;
+    }
 }
