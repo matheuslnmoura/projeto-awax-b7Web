@@ -1033,13 +1033,13 @@ CSS DE ÁREAS ESPECÍFICAS
     border-bottom: 1px solid #888;
     background-color: transparent;
     padding: 15px 0px;
-    text-transform: uppercase;
 }
 
 .contact-form input::-webkit-input-placeholder,
 .contact-form textarea::-webkit-input-placeholder{
     color: #888;
     font-family: 'Montserrat';
+    text-transform: uppercase;
 }
 
 .contact-form input:focus,
@@ -1436,5 +1436,321 @@ CSS DE ÁREAS ESPECÍFICAS
 
     .form-first-line{
         flex-direction: column;
+    }
+
+    .form-first-line input[type=text]{
+        margin-right: 0px;
+    }
+
+    .content-area{
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 450px){
+    .logo-area{
+        margin-left: 40px;
+    }
+    
+    .mobile-menu-icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 40px;
+    }
+
+    .mobile-menu-icon div{
+        width: 45px;
+        height:10px;
+        background-color: #b28756;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .menu-area nav{
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 80vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+
+    .mobile-menu-icon:hover{
+        transform: rotate(-90deg);
+        transition: 0.8s;
+    }
+
+    .menu-area nav ul{ 
+        flex-direction: column;
+    }
+
+    .menu-area li{
+        display: block;
+        width: fit-content;
+        margin-left: calc(100vw*0.4*0.1);
+    }
+
+    .menu-area a{
+        text-decoration: none;
+        color: #FFF;
+        font-weight:600;
+        height:45px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        padding: 0px 10px;
+        box-sizing: content-box;
+    }
+    
+    .menu-area a:hover,
+    .menu-area .active a{
+        color: #b28756;
+        border: none;
+    }
+
+
+    .section-about-us{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .section-about-us--left{
+        width: 90vw;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    
+    .section-about-us--right{
+        width: 90vw;
+    }
+    
+    .section-about-us--right img{
+        width: 100%;
+    }
+
+    .section-services{
+        flex-wrap: wrap;
+    }
+
+    .section-service{
+        min-width: 100%;
+        border:0;
+        margin-bottom: 30px;
+    }
+
+    .section-service:first-child {
+        border-left: none;
+    }
+
+
+
+
+    .projects-menu-area nav ul{
+        flex-wrap: wrap;
+    }
+
+    .projects-menu-area nav ul li{
+        font-size: 0.5rem;
+        display: block;
+    }
+
+    .projects--photos{
+        width: 80vw;
+        margin-bottom: 20px;
+    }
+
+    .projects--photos:nth-child(7),
+    .projects--photos:nth-child(8),
+    .projects--photos:nth-child(9),
+    .projects--photos:nth-child(10),
+    .projects--photos:nth-child(11),
+    .projects--photos:nth-child(12){
+        display: none;
+    }
+    
+    .photo-area{
+        width: 80vw;
+        margin: 0;
+        height: auto;
+    }
+
+    .photo-info{
+        height: calc(80vw*0.625);
+    }
+
+    .section-team{
+        max-width: 280px;
+    }
+
+    .section-happy-clients .slide-area {
+        width: 70%;
+    }
+
+    .companies-container{
+        flex-wrap: wrap;
+
+    }
+
+    .company-logo{
+        margin: 10px;
+    }
+
+    .section-body--price{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price-options-area{
+        width: 70vw;
+        margin-bottom: 15px;
+    }
+
+    .social-media-section{
+        transform: scale(.65);
+    }
+
+    .social-media-text span{
+        text-align: center;
+    }
+
+    .section-features{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+    }
+
+    .section-features--left{
+        width: 230px;
+        margin-bottom: 40px;
+    }
+
+    .section-features--right{
+        margin-right: 0;
+    }
+
+    .feature-area{
+        margin-left: 0;
+    }
+
+    .feature-header h1{
+        font-size: 1.6em;
+    }
+
+    .feature-content p,
+    .feature-content ul li{
+        font-size: 0.825em;
+    }
+
+    .section-some-facts{
+        flex-direction: column;
+    }
+
+    .contact-us-content{
+        width: 70%;
+    }
+
+    .contact-us-content h1{
+        font-size: 18px;
+    }
+
+    .contact-us-content h3{
+        text-align: center;
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .form-first-line{
+        flex-direction: column;
+    }
+
+    .form-first-line input[type=text]{
+        margin-right: 0px;
+    }
+
+    .contact-form input,
+    .contact-form textarea{
+        font-size: 10px;
+    }
+
+    .address-section {
+        padding-bottom: 250px;
+    }
+
+    .content-total-area{
+        width: 100vw;
+    }
+
+    .content-area{
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .info-icon-area{
+        width: 25px;
+        height: 25px;
+    }
+
+    .info-icon-area img{
+        width: 16px;
+    }
+
+
+    .info-text-area{
+        font-size: 9px;
+    }
+
+    .footer-content{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .footer-content .subscribe-area{
+        align-self: normal;
+        margin-top: 0;
+    }
+
+    .footer-content .text-area{
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .footer-social-media .social-media-icons, .developer-links a{
+        margin-right: 0;
+    }
+
+    .footer-social-media{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .developed-by-area{
+        justify-content: space-between;
+    }
+
+    .developed-by-area span{
+        font-size: 9px;
+    }
+
+    .developer-links a{
+        margin-right: 10px;
+    }
+
+    .banner-container h1{
+        font-size: 30px;
+    }
+
+    .banner-container h2{
+        font-size: 15px;
     }
 }
